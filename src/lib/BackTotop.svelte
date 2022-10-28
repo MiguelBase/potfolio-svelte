@@ -28,7 +28,7 @@
 
 <div class="back-to-top" on:click={goTop}  class:hidden>
 
-    <img src="src\assets\arrow_upward.svg" alt="Go top page">
+    <img src="public\arrow_upward.svg" alt="Go top page">
 </div>
 
 <style>
