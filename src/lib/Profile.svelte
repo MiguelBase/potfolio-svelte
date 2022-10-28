@@ -5,7 +5,8 @@
   <div class="">
     <div class="profile-image">
       <figure class="image is-2by5">
-        <img class="is-rounded" src="public\profile.jfif" />
+        <img class="is-rounded" src="https://i.ibb.co/bFHSHgQ/profile.jpg" />
+        
       </figure>
     </div>
     <div class="profile-name">Miguel Victor Huayllas Choque</div>

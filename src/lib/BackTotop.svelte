@@ -27,8 +27,7 @@
 <svelte:window on:scroll={handleOnScroll} />
 
 <div class="back-to-top" on:click={goTop}  class:hidden>
-
-    <img src="public\arrow_upward.svg" alt="Go top page">
+    Top
 </div>
 
 <style>
@@ -40,7 +39,7 @@
     right: 20px;
     user-select: none;
     bottom: 20px;
-    color: white;
+    color: black;
     background-color: rgb(255, 255, 255);
     border-radius: 15px;
     border: 2px solid black;
