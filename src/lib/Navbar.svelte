@@ -25,30 +25,77 @@
 <nav class="container is-desktop">
   <div class="columns">
     <div class="column">
-      {$current_nav_titles.profile}
+      <p class="title-text title-text-profile">
+        {$current_nav_titles.profile}
+      </p>
     </div>
     <div class="column">
-      {$current_nav_titles.projects}
+      <p class="title-text title-text-projects">
+        {$current_nav_titles.projects}
+      </p>
     </div>
     <div class="column">
-      {$current_nav_titles.tecnologies}
+      <p class="title-text title-text-tecnologies">
+        {$current_nav_titles.tecnologies}
+      </p>
     </div>
     <div class="column">
-      {$current_nav_titles.social}
+      <p class="title-text title-text-social">
+        {$current_nav_titles.social}
+      </p>
     </div>
     <div class="column">
-      {$current_nav_titles.contact}
+      <p class="title-text title-text-contact">
+        {$current_nav_titles.contact}
+      </p>
     </div>
   </div>
   <div class="columns">
-    <button class="column">Change to English</button>
-    <button class="column">Cambair a español</button>
-
+    <button on:click={change_nav_titles_to_english} class="column">Change to English</button>
+    <button on:click={change_nav_titles_to_spanish} class="column">Cambair a español</button>
   </div>
 </nav>
 
 <style>
-  nav {
-    background-color: rgb(148, 148, 81);
+  nav{
+    margin-bottom: 20px;
   }
+  .title-text{
+    font-family: Impact, Charcoal, sans-serif;
+    font-size: 23px;
+    letter-spacing: 1px;
+    word-spacing: 0px;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    text-decoration: underline solid rgb(68, 68, 68);
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+    transition: 0.3;
+  }
+  .title-text-profile:hover{
+    font-size: 25px;
+    text-decoration: underline solid rgb(68, 68, 68);
+  }
+  .title-text-projects:hover{
+    font-size: 25px;
+    color :var(--color-primary-0);
+    text-decoration: underline solid var(--color-primary-0);
+  }
+  .title-text-tecnologies:hover{
+    font-size: 25px;
+    color :var(--color-secondary-0);
+    text-decoration: underline solid var(--color-secondary-0);
+  }
+  .title-text-social:hover{
+    font-size: 25px;
+    color :var(--color-terciary-0);
+    text-decoration: underline solid var(--color-terciary-0);
+  }
+  .title-text-contact:hover{
+    font-size: 25px;
+    color :var(--color-complement-0);
+    text-decoration: underline solid var(--color-complement-0);
+  }
+
 </style>

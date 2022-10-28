@@ -13,6 +13,30 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+    --color-primary-0 : #39A939 ;	/* Main Primary color */
+    --color-primary-1 : #8CDC8C ;
+    --color-primary-2 : #5CC45C ;
+    --color-primary-3 : #1F911F ;
+    --color-primary-4 :  #0A730A ;
+
+    --color-secondary-0 :  #2B7E7E ;	/* Main Secondary color (1) */
+    --color-secondary-1 :  #76B8B8 ;
+    --color-secondary-2 :  #459393 ;
+    --color-secondary-3 :  #176C6C ;
+    --color-secondary-4 :  #085656 ;
+
+    --color-terciary-0 :  #D38647; 	/* Main Secondary color (2) */
+    --color-terciary-1 :  #FFCDA3 ;
+    --color-terciary-2 :  #F5AE73 ;
+    --color-terciary-3 :  #B56726 ;
+    --color-terciary-4 :  #8F480D ;
+
+    --color-complement-0 : #D34747; 	/* Main Complement color */
+    --color-complement-1 :  #FFA3A3 ;
+    --color-complement-3 :  #B52626 ;
+    --color-complement-4 :  #8F0D0D ;
+    --color-complement-2 :  #F57373;
 }
 
 a {
@@ -79,3 +103,5 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+
