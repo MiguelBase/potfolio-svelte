@@ -32,9 +32,12 @@
         {$current_nav_titles.contact}
     </div>
   </div>
+
+  <button class="button is-primary">Primary</button>
 </nav>
 <style>
     nav {
         background-color: rgb(148, 148, 81);
+        width:400px;
     }
 </style>
