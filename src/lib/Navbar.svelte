@@ -4,6 +4,7 @@
   import { es_nav_titles } from "../webContent";
   import { en_nav_titles } from "../webContent";
   import { current_nav_titles } from "../webContent";
+
   let time = null;
   const unsubStore = dataStore.subscribe((data) => (time = data));
   onDestroy(unsubStore);
@@ -18,6 +19,7 @@
       return $en_nav_titles;
     });
   };
+
 
   change_nav_titles_to_spanish();
 </script>
@@ -40,7 +42,7 @@
       </p>
     </div>
     <div class="column">
-      <p class="title-text title-text-social">
+      <p class="title-text title-text-social" >
         {$current_nav_titles.social}
       </p>
     </div>
@@ -51,8 +53,11 @@
     </div>
   </div>
   <div class="columns">
-    <button on:click={change_nav_titles_to_english} class="column">Change to English</button>
-    <button on:click={change_nav_titles_to_spanish} class="column">Cambair a español</button>
+    <div class="column">
+      <button on:click={change_nav_titles_to_english} class="">Change to English</button>
+      <button on:click={change_nav_titles_to_spanish} class="">Cambiar a español</button>
+    </div>
+
   </div>
 </nav>
 
@@ -71,31 +76,47 @@
     font-style: normal;
     font-variant: normal;
     text-transform: none;
-    transition: 0.3;
+    transition: opacity 0.5s, visibility 0.5s;
   }
   .title-text-profile:hover{
     font-size: 25px;
+    background-color: rgb(187, 187, 187);
     text-decoration: underline solid rgb(68, 68, 68);
   }
   .title-text-projects:hover{
     font-size: 25px;
     color :var(--color-primary-0);
+    background-color: var(--color-primary-1);
     text-decoration: underline solid var(--color-primary-0);
   }
   .title-text-tecnologies:hover{
     font-size: 25px;
     color :var(--color-secondary-0);
+    background-color: var(--color-secondary-1);
     text-decoration: underline solid var(--color-secondary-0);
   }
   .title-text-social:hover{
     font-size: 25px;
     color :var(--color-terciary-0);
+    background-color: var(--color-terciary-1);
     text-decoration: underline solid var(--color-terciary-0);
   }
   .title-text-contact:hover{
     font-size: 25px;
     color :var(--color-complement-0);
+    background-color: var(--color-complement-1);
     text-decoration: underline solid var(--color-complement-0);
+  }
+  button{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    transition: opacity 0.5s, visibility 0.5s;
+  }
+  button:hover{
+    background-color: black;
+    color: white;
+    border: 2px solid white;
   }
 
 </style>
